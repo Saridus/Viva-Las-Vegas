@@ -1,0 +1,18 @@
+{
+    "name": "htlw3r/twig",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Htlw3r\\Twig\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateusz Kaminski",
+            "email": "8077@htl.rennweg.at"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}

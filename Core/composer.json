@@ -1,0 +1,16 @@
+{
+    "name": "htlw3r/core",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Htlw3r\\Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateusz Kaminski",
+            "email": "8077@htl.rennweg.at"
+        }
+    ],
+    "require": {}
+}

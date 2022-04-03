@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twig</title>
+    <link rel="stylesheet" href="style.scss">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+                <img src="{{ hotels[0].image }}" alt="hotel">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+                <img src="{{ hotels[1].image }}"
+                     alt="hotel">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+                <img src="{{ hotels[2].image }}"
+                     alt="hotel">
+            </label>
+        </div>
+        <div class="player">
+            <div class="upper-part">
+                <div class="info-area" id="test">
+                    <label class="song-info">
+                        {% for hotel in hotels %}
+                            <div class="title">{{hotel.name}}</div>
+                            <div class="sub-line">
+                                <div class="subtitle">{{hotel.stars}}</div>
+                            </div>
+                        {% endfor %}
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
